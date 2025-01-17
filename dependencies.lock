@@ -1,0 +1,17 @@
+dependencies:
+  esp-nn:
+    dependencies: []
+    source:
+      path: /Users/esp/Projects/esp-yolov8n-test/components/esp-nn
+      type: local
+    version: 1.1.0
+  idf:
+    source:
+      type: idf
+    version: 5.4.0
+direct_dependencies:
+- espressif/esp-nn
+- idf
+manifest_hash: 5eda98c7cea1ea74fef66fbf75315b095dc9dccb46de6b17ae89d1ad3fe6b2aa
+target: esp32s3
+version: 2.0.0
