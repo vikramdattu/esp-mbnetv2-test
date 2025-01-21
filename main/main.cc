@@ -38,7 +38,7 @@ float dequantize(int8_t val) {
 
 extern "C" void app_main(void)
 {
-    model = tflite::GetModel(esp_yolo_model);
+    model = tflite::GetModel(mobilenet_v2_35_quantized_int8_tflite);
     if (model->version() != TFLITE_SCHEMA_VERSION) {
         MicroPrintf("Model provided is schema version %d not equal to supported version %d.", model->version(), TFLITE_SCHEMA_VERSION);
     }
